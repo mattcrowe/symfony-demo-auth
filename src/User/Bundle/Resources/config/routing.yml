@@ -1,0 +1,14 @@
+_login:
+    resource: "@UserBundle/Controller/AuthController.php"
+    type:     annotation
+    prefix:   /auth
+
+demo_manage:
+    resource: "@UserBundle/Controller/ManageController.php"
+    type:     annotation
+    prefix:   /manage/demo
+    
+demo_admin:
+    resource: "@UserBundle/Controller/AdminController.php"
+    type:     annotation
+    prefix:   /admin/demo

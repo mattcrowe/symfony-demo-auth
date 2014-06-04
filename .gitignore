@@ -1,0 +1,102 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tar.gz
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE #
+###################
+.idea/*
+
+# Cpanel #
+###################
+.bash*
+.contactemail
+.cpanel/*
+.dns
+.ftpquota
+.lastlogin
+.ssh/*
+.zshrc
+error_log
+access-logs
+access-logs/*
+cpbackup-exclude.conf
+etc/*
+logs/*
+mail/*
+nbproject/*
+php.ini
+proven/*
+ssl/*
+tmp/*
+public_html
+public_html/*
+public_html/sta/*
+
+# Symfony #
+###################
+.composer/
+composer.lock
+phpunit.xml
+/bin/coverage/
+/bin/html/
+/bin/report/
+/bin/phpunit-report/
+/public/bundles/
+/public_html/bundles/
+/www/bundles/
+/app/bootstrap.php.cache
+/app/cache/*
+/app/config/parameters.yml
+/app/DoctrineMigrations/
+/app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+/build/
+/vendor/
+/composer.phar
+/cakephp
+/king
+/scout
+/armory
+/src-client
+
+
+# ORM Designer #
+###################
+.ormdesigner2
+/orm-designer

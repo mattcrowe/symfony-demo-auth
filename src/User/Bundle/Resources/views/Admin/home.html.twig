@@ -1,0 +1,20 @@
+{% extends "UserBundle::layout.html.twig" %}
+
+{% block title "Symfony - Demos" %}
+
+{% block content_header '' %}
+
+{% block content %}
+
+    {% for flashMessage in app.session.flashbag.get('flash') %}
+        <p><strong>{{ flashMessage | raw }}</strong></p>
+    {% endfor %}
+
+    <h1>Admin Home</h1>
+
+    <ul>
+        <li><a href="{{ path('admin_demo_agent') }}">Agent Action</a></li>
+        <li><a href="{{ path('admin_demo_editor') }}">Editor Action</a></li>
+        <li><a href="{{ path('admin_logout') }}">Logout</a></li>
+    </ul>
+{% endblock %}

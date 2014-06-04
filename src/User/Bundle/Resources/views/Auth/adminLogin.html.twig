@@ -1,0 +1,21 @@
+{% extends "UserBundle::layout.html.twig" %}
+
+{% block title "Symfony - Demos" %}
+
+    {% block content_header '' %}
+
+        {% block content %}
+
+            {% for flashMessage in app.session.flashbag.get('flash') %}
+                <p><strong>{{ flashMessage | raw }}</strong></p>
+            {% endfor %}
+
+            <form action="{{ path('admin_login') }}" method="post">
+                <label for="username">Username: </label>
+                <input type="text" id="username" name="username" value=""/>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" value=""/>
+                <button type="submit">login</button>
+            </form>
+
+        {% endblock %}

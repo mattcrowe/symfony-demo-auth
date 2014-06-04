@@ -1,0 +1,20 @@
+services:
+    staff.security:
+        class: User\Bundle\Security\Staff\StaffProvider
+        arguments: ["@doctrine.orm.default_entity_manager", "@service_container"]
+    staff.security.authentication_provider:
+        class: User\Bundle\Security\Staff\StaffAuthenticationProvider
+        arguments: ["@doctrine.orm.default_entity_manager", "@service_container"]
+    staff.security.authentication_listener:
+        class: User\Bundle\Security\Staff\StaffAuthenticationListener
+        arguments: ["@doctrine.orm.default_entity_manager", "@service_container", "@security.authentication.manager"]
+        
+    user.security:
+        class: User\Bundle\Security\User\UserProvider
+        arguments: ["@doctrine.orm.default_entity_manager", "@service_container"]
+    user.security.authentication_provider:
+        class: User\Bundle\Security\User\UserAuthenticationProvider
+        arguments: ["@doctrine.orm.default_entity_manager", "@service_container"]
+    user.security.authentication_listener:
+        class: User\Bundle\Security\User\UserAuthenticationListener
+        arguments: ["@doctrine.orm.default_entity_manager", "@service_container", "@security.authentication.manager"]
