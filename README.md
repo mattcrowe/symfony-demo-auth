@@ -28,8 +28,8 @@ http://example/app_dev.php/auth/admin/login
 
 Files of Interest
 
-`#app:
-app/AppKernel.php
+| app
+| app/AppKernel.php
 
 #config
 app/config/security.yml #various params
